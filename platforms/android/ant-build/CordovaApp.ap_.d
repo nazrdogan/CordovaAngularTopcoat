@@ -36,6 +36,7 @@
 /home/nazr/topcoat/platforms/android/assets/www/cordova.js \
 /home/nazr/topcoat/platforms/android/assets/www/index.html \
 /home/nazr/topcoat/platforms/android/assets/www/js/index.js \
+/home/nazr/topcoat/platforms/android/assets/www/js/angularjs_1.3.14.js \
 /home/nazr/topcoat/platforms/android/assets/www/img/logo.png \
 /home/nazr/topcoat/platforms/android/assets/www/css/index.css \
 /home/nazr/topcoat/platforms/android/assets/www/css/topcoat-mobile-dark.css \
