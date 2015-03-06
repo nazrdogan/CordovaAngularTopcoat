@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-dark.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body ng-app>
+    <div class="topcoat-navigation-bar">
+        <div class="topcoat-navigation-bar__item center full">
+            <h1 class="topcoat-navigation-bar__title">GereksizCoder</h1>
+        </div>
+    </div>
+    <div ng-init="friends = [{name:'John', phone:'555-1276','notify':'1'},
+                         {name:'Mary', phone:'800-BIG-MARY','notify':'2'},
+                         {name:'Mike', phone:'555-4321','notify':'5'},
+                         {name:'Adam', phone:'555-5678','notify':'4'},
+                         {name:'Julie', phone:'555-8765','notify':'3'},
+                         {name:'Juliette', phone:'555-5678','notify':'13'}]"></div>
+    <div class="search-bar">
+     <input style="width:100%;" type="search" value="" placeholder="search" class="topcoat-search-input" ng-model="searchText">
+     </div>
+       <div id="searchTextResults" class="topcoat-list">
+        <ul class="topcoat-list__container" ng-repeat="friend in friends | filter:searchText">
+            <li class="topcoat-list__item">{{friend.name}}  {{friend.phone}} <span style="margin-left:300px" class="topcoat-notification">{{friend.notify}}</span></li>
+
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="topcoat-tab-bar full">
+            <label class="topcoat-tab-bar__item">
+                <input type="radio" name="topcoat">
+                <button class="topcoat-tab-bar__button full">Tab 1</button>
+            </label>
+            <label class="topcoat-tab-bar__item">
+                <input type="radio" name="topcoat">
+                <button class="topcoat-tab-bar__button full">Tab 2</button>
+            </label>
+            <label class="topcoat-tab-bar__item">
+                <input type="radio" name="topcoat">
+                <button class="topcoat-tab-bar__button full">Tab 2</button>
+            </label>
+        </div>
+    </div>
+  </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+    </body>
+</html>
